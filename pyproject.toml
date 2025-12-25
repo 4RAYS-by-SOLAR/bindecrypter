@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bindecrypter"
+version = "1.0.0"
+description = "Deobfuscator for bincrypter-wrapped binaries"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "4rays" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pycryptodome>=3.18"
+]
+
+[project.scripts]
+bindecrypter = "bindecrypter.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/4RAYS-by-SOLAR/bindecrypter"
